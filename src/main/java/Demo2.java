@@ -28,8 +28,7 @@ public class Demo2 {
             }
 
             // count number of letters in current word
-            int curNumLetters = 0;
-            curNumLetters = countLetters(wordsArray[i]);
+            int curNumLetters = countLetters(wordsArray[i]);
 
             // save highest letterCount & index of word if greatest length
             if (curNumLetters > maxLength) {
