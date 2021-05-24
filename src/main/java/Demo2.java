@@ -44,7 +44,7 @@ public class Demo2 {
         System.out.println(Arrays.toString(A));
 
         for (int i = 0; i < A.length; i++) {
-            // if the first value is not negative and the 2nd value is not 1 more than the first or equal to the first,
+            // if the first value is not negative and the 2nd value is not 1 more than the first, or equal to the first,
             // return the first value plus 1
 
             if (A[i] <= 0) continue;

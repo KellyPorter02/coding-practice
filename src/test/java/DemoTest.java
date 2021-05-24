@@ -166,4 +166,44 @@ public class DemoTest {
         int returned = test.secondHighest(input);
         Assert.assertEquals(expected, returned);
     }
+
+    @Test
+    public void solutionTest1() {
+        String input = ".X..X";
+        int expected = 2;
+        int returned = test.minNum3LengthPatches(input);
+        Assert.assertEquals(expected,returned);
+    }
+
+    @Test
+    public void solutionTest2() {
+        String input = "X.XXXXX.X.";
+        int expected = 3;
+        int returned = test.minNum3LengthPatches(input);
+        Assert.assertEquals(expected,returned);
+    }
+
+    @Test
+    public void solutionTest3() {
+        String input = "XX.XXX..";
+        int expected = 2;
+        int returned = test.minNum3LengthPatches(input);
+        Assert.assertEquals(expected,returned);
+    }
+
+    @Test
+    public void solutionTest4() {
+        String input = "XXXX";
+        int expected = 2;
+        int returned = test.minNum3LengthPatches(input);
+        Assert.assertEquals(expected,returned);
+    }
+
+    @Test
+    public void solutionTest5() {
+        String input = "....X..X.X..XX.XXX.X.X.X..";
+        int expected = 6;
+        int returned = test.minNum3LengthPatches(input);
+        Assert.assertEquals(expected,returned);
+    }
 }

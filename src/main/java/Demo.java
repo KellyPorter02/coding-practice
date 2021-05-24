@@ -39,8 +39,7 @@ public class Demo {
         char[] bCh = b.toCharArray();
         Arrays.sort(aCh);
         Arrays.sort(bCh);
-        if (String.copyValueOf(aCh).equals(String.copyValueOf(bCh))) return true;
-        return false;
+        return String.copyValueOf(aCh).equals(String.copyValueOf(bCh));
     }
 
 
@@ -49,7 +48,7 @@ public class Demo {
         for (int i = 0; i < tools.size(); i++) {
             toolsAndIdx.put(tools.get(i), i);
         }
-        System.out.println(toolsAndIdx.toString());
+        System.out.println(toolsAndIdx);
 
         int shift = Math.abs(startIndex - toolsAndIdx.get(target));
         int dif = tools.size() - shift;
@@ -208,4 +207,34 @@ public class Demo {
         }
         return newNumber;
     }
+
+    public int minNum3LengthPatches(String S) {
+        int count = 0;
+        String endSubString;
+
+        for (int i = 0; i < S.length(); i++) {
+            // account for end of string
+            if (i >= S.length()-3) {
+                endSubString = S.substring(i);
+                if (endSubString.contains("X")) {
+                    count++;
+                    break;
+                } else {
+                    break;
+                }
+            }
+            // skip to first occurrence of X
+            if (S.charAt(i) == '.') {
+                continue;
+            }
+            // count a patch at first X found, then skip to 3 spaces down and continue to check
+            if (S.charAt(i) == 'X') {
+                count++;
+                i += 2;
+            }
+        }
+        return count;
+    }
+
 }
+
