@@ -168,7 +168,7 @@ public class DemoTest {
     }
 
     @Test
-    public void solutionTest1() {
+    public void minNum3LengthPatchesTest1() {
         String input = ".X..X";
         int expected = 2;
         int returned = test.minNum3LengthPatches(input);
@@ -176,7 +176,7 @@ public class DemoTest {
     }
 
     @Test
-    public void solutionTest2() {
+    public void minNum3LengthPatchesTest2() {
         String input = "X.XXXXX.X.";
         int expected = 3;
         int returned = test.minNum3LengthPatches(input);
@@ -184,7 +184,7 @@ public class DemoTest {
     }
 
     @Test
-    public void solutionTest3() {
+    public void minNum3LengthPatchesTest3() {
         String input = "XX.XXX..";
         int expected = 2;
         int returned = test.minNum3LengthPatches(input);
@@ -192,7 +192,7 @@ public class DemoTest {
     }
 
     @Test
-    public void solutionTest4() {
+    public void minNum3LengthPatchesTest4() {
         String input = "XXXX";
         int expected = 2;
         int returned = test.minNum3LengthPatches(input);
@@ -200,7 +200,7 @@ public class DemoTest {
     }
 
     @Test
-    public void solutionTest5() {
+    public void minNum3LengthPatchesTest5() {
         String input = "....X..X.X..XX.XXX.X.X.X..";
         int expected = 6;
         int returned = test.minNum3LengthPatches(input);

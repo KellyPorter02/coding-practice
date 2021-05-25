@@ -88,34 +88,34 @@ public class Demo2Test {
     }
 
     @Test
-    public void solutionTest1() {
+    public void minPositiveIntNotAlreadyInArrayTest1() {
         int[] input = {1, 3, 6, 4, 1, 2};
         int expected = 5;
-        int returned = test.solution(input);
+        int returned = test.minPositiveIntNotAlreadyInArray(input);
         Assert.assertEquals(expected, returned);
     }
 
     @Test
-    public void solutionTest2() {
+    public void minPositiveIntNotAlreadyInArrayTest2() {
         int[] input = {1, 2, 3};
         int expected = 4;
-        int returned = test.solution(input);
+        int returned = test.minPositiveIntNotAlreadyInArray(input);
         Assert.assertEquals(expected, returned);
     }
 
     @Test
-    public void solutionTest3() {
+    public void minPositiveIntNotAlreadyInArrayTest3() {
         int[] input = {-1, -3};
         int expected = 1;
-        int returned = test.solution(input);
+        int returned = test.minPositiveIntNotAlreadyInArray(input);
         Assert.assertEquals(expected, returned);
     }
 
     @Test
-    public void solutionTest4() {
+    public void minPositiveIntNotAlreadyInArrayTest4() {
         int[] input = {0, 0, 0};
         int expected = 1;
-        int returned = test.solution(input);
+        int returned = test.minPositiveIntNotAlreadyInArray(input);
         Assert.assertEquals(expected, returned);
     }
 }

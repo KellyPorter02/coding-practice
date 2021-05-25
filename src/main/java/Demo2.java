@@ -39,7 +39,7 @@ public class Demo2 {
         return wordsArray[maxIndex];
     }
 
-    public int solution(int[] A) {
+    public int minPositiveIntNotAlreadyInArray(int[] A) {
         Arrays.sort(A);
         System.out.println(Arrays.toString(A));
 
