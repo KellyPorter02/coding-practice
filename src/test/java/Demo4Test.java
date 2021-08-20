@@ -1,4 +1,4 @@
-import org.junit.Assert;
+    import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -30,6 +30,7 @@ public class Demo4Test {
         int given = 1234321;
         boolean expected = true;
         // When
+        System.out.println(3 % 4);
         boolean returned = test.isIntPalindrome(given);
         // Then
         Assert.assertEquals(expected, returned);
@@ -79,5 +80,25 @@ public class Demo4Test {
         Assert.assertEquals(expected, returned);
     }
 
+    @Test
+    public void maxSubArraySum1() {
+        // Given
+        int[] given = {-2,1,-3,4,-1,2,1,-5,4};
+        int expected = 6;
+        // When
+        int returned = test.maxSubArraySum(given);
+        // Then
+        Assert.assertEquals(expected, returned);
+    }
 
+    @Test
+    public void maxSubArraySum2() {
+        // Given
+        int[] given = {-2,1,-3,4,-1};
+        int expected = 4;
+        // When
+        int returned = test.maxSubArraySum(given);
+        // Then
+        Assert.assertEquals(expected, returned);
+    }
 }
