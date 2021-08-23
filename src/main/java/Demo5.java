@@ -4,28 +4,13 @@ import java.util.Arrays;
 
 public class Demo5 {
 
-//    public int solution(int[] A) {
-//        int min = findMin(A);
-//        int minIdx = -1;
-//        int prevEl = A[0];
-//        int prevIdx = 0;
-//        int oneLess = min - 1;
-//
-//        for (int i = 0; i < A.length; i++) {
-//            if (oneLess == )
-//
-//        }
-//        return -1;
-//    }
 
     public int findMin(int[] input) {
         int min = Integer.MAX_VALUE;
-        int minIdx = -2;
 
         for (int i = 0; i < input.length; i++) {
             if (input[i] < min) {
                 min = input[i];
-                minIdx = i;
             }
         }
         return min;
@@ -36,9 +21,6 @@ public class Demo5 {
         int secondMin = Integer.MAX_VALUE;
 
         for (int i = 0; i < input.length; i++) {
-            if (input[i] == min) {
-            }
-
             if (input[i] < secondMin && input[i] > min) {
                 secondMin = input[i];
             }
