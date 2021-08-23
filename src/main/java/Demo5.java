@@ -46,7 +46,7 @@ public class Demo5 {
         return secondMin;
     }
 
-    public int solution(int[] input) {
+    public int lowestIntNotInArray(int[] input) {
         Arrays.sort(input);
 
         int current;

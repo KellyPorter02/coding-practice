@@ -14,56 +14,56 @@ public class Demo5Test {
     }
 
     @Test
-    public void solution1() {
+    public void lowestIntNotInArray1() {
         //A = [1, 3, 6, 4, 1, 2], the function should return 5.
         int[] input = {1, 3, 6, 4, 1, 2};
         int expected = 5;
-        int returned = test.solution(input);
+        int returned = test.lowestIntNotInArray(input);
         Assert.assertEquals(expected, returned);
     }
 
     @Test
-    public void solution2() {
+    public void lowestIntNotInArray2() {
         //Given A = [1, 2, 3], the function should return 4.
         int[] input = {1, 2, 3};
         int expected = 4;
-        int returned = test.solution(input);
+        int returned = test.lowestIntNotInArray(input);
         Assert.assertEquals(expected, returned);
     }
 
     @Test
-    public void solution3() {
+    public void lowestIntNotInArray3() {
         //Given A = [−1, −3], the function should return 1.
         int[] input = {-1, -3};
         int expected = 1;
-        int returned = test.solution(input);
+        int returned = test.lowestIntNotInArray(input);
         Assert.assertEquals(expected, returned);
     }
 
     @Test
-    public void solution4() {
+    public void lowestIntNotInArray4() {
         //Given A = [−3], the function should return 1.
         int[] input = {-3};
         int expected = 1;
-        int returned = test.solution(input);
+        int returned = test.lowestIntNotInArray(input);
         Assert.assertEquals(expected, returned);
     }
 
     @Test
-    public void solution5() {
+    public void lowestIntNotInArray5() {
         //Given A = [0], the function should return 1.
         int[] input = {0};
         int expected = 1;
-        int returned = test.solution(input);
+        int returned = test.lowestIntNotInArray(input);
         Assert.assertEquals(expected, returned);
     }
 
     @Test
-    public void solution6() {
+    public void lowestIntNotInArray6() {
         //Given A = [3, 3, 3, 3, 3, 3], the function should return 4/.
         int[] input = {3, 3, 3, 3, 3, 3};
         int expected = 4;
-        int returned = test.solution(input);
+        int returned = test.lowestIntNotInArray(input);
         Assert.assertEquals(expected, returned);
     }
 
